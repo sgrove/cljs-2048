@@ -1,5 +1,4 @@
 pom.xml
-*jar
 /lib/
 /classes/
 /out/
@@ -7,3 +6,4 @@ pom.xml
 .lein-deps-sum
 .lein-repl-history
 .lein-plugins/
+/build
