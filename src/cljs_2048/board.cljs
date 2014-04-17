@@ -1,9 +1,5 @@
 (ns cljs-2048.board)
 
-(defn print-board [board]
-  (doseq [row board]
-    (println row)))
-
 (defn make-board [rows columns]
   (into {} (for [row (range rows)
                  col (range columns)]
@@ -19,4 +15,9 @@
   (let [locs (empty-tile-locations board)
         loc (rand-nth locs)]
     (place-tile-at board loc (rand-nth [2 4]))))
+
+(defn new-game-board [rows cols]
+  (-> (make-board rows cols)
+      (add-random-tile)
+      (add-random-tile)))
 
