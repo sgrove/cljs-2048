@@ -4,7 +4,8 @@
 
   :dependencies [[org.clojure/clojure "1.6.0"]
                  [org.clojure/clojurescript "0.0-2202"]
-                 [om "0.5.1"]]
+                 [om "0.5.1"]
+                 [sablono "0.2.15"]]
 
   :plugins [[lein-cljsbuild "1.0.3"]]
 
